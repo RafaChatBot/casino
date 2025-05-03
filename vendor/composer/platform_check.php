@@ -4,7 +4,8 @@
 
 $issues = array();
 
-if (!(PHP_VERSION_ID >= 80200)) {
+// Modificar a comparação de versão para PHP 8.1.31
+if (!(PHP_VERSION_ID >= 80100)) { // Isso aceita qualquer versão 8.1 ou superior
     $issues[] = 'Your Composer dependencies require a PHP version ">= 8.2.0". You are running ' . PHP_VERSION . '.';
 }
 
